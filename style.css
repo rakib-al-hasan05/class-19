@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.fixed-width{
+    max-width: 1300px;
+}
+h1,h2,h3,h4,h5,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+/* ..........Header Csss............  */
+header{
+    background: rgba(0, 0, 0, 0.250);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 44;
+}
+header .logo-left{
+    float: left;
+    width: 40%;
+}
+header .logo-left img{
+    width: px;
+}
+header .logo-right{
+    float: right;
+    width: 60%;
+}
+header .logo-right ul li{
+    display: inline-block;
+    position: relative;
+}
+header .logo-right ul{
+    margin-top: 7px;
+}
+header .logo-right ul li a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    background: #c69453;
+    height: 4px;
+    width: 0;
+    bottom: 0;
+    transition: .5s;
+}
+header .logo-right ul li a:hover:after{
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+header .logo-right ul li a{
+    display: inline-block;
+    color: #fff;
+    padding: 0px 17px;
+    font-size: 16px;
+    line-height: 61px;
+    text-transform: uppercase;
+}
+header .logo-right ul li a:hover{
+    color: #c69453;
+}
+/* ..........drop DoWon menu........  */
+.logo-right ul li ul.down{
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 240px;
+    background: #fff;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.logo-right ul li .down li{
+    display: block;
+}
+.logo-right ul li:hover ul.down{
+    visibility: visible;
+    opacity: 1;
+}
+.logo-right ul li ul.down li a{
+    color: #000;
+    text-transform: uppercase;
+    display: block;
+}
+.logo-right ul li ul.down li a:hover{
+    background: #f2f2f2;
+    transition: .3s;
+    color: #c69453;
+}
+.logo-right ul li ul.down li a::after{
+    content: "";
+    visibility: hidden;
+}
+/* ........banner Seclation........... */
+section.bann{
+    background: url(./img/ia_200000019.jpg)center center no-repeat;
+    background-size: cover;
+    padding: 180px 0;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+.banner h1{
+    font-size: 90px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.banner h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+.banner a{
+    display: inline-block;
+    padding: 10px 25px;
+    background: #c69453;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
+.banner a:hover{
+    background: skyblue;
+    color: #c69453;
+    transition: .5s;
+}
+/* .........dive section...... */
+.div-section{
+    background: #f8f8f8;
+    padding: 100px;
+}
+.div-section article img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: .5s;
+    margin: 30px 0;
+}
+.div-section article:hover img{
+    transform: rotateY(360deg);
+}
+.div-section article:hover{
+    background:#f2f2f2;
+}
+.div-section article{
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+    box-shadow:3px 4px 30px 0 rgba(142, 156, 223, 0.3);
+    padding-bottom: 30px;
+}
+.div-section article:last-child{
+    margin-right: 0;
+}
+.div-section h2{
+    font-weight: 500;
+    font-size: 28px;
+}
+.div-section p{
+    padding: 20px 50px;
+    color: #878e8d;
+    font-size: 18px;
+}
+.div-section a{
+    display: inline-block;
+    background: #c69453;
+    padding: 9px 20px;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: 15px;
+    transition: .5s;
+}
+.div-section article:hover a{
+    background: #fff;
+    color: #000;
+}
+.div-section article a:hover{
+    background: #000;
+    color: #fff;
+}
+/* ..........Video Part......  */
+.inform{
+    padding-top: 120px;
+    padding: 120px 0;
+}
+.inform .left{
+    float: left;
+    width: 47%;
+}
+.inform .right{
+    float: right;
+    width: 47%;
+}
+.inform .right h1{
+    font-size: 37px;
+    margin-top: 0;
+}
+.inform .right h1 span{
+    color: #c69453;
+}
+.inform .right p{
+    margin-bottom: 30px;
+}
+.inform details{
+    display: block;
+}
+.inform .right a{
+    color: #fff;
+    background: #000;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+/* ............sdfhtgfmjg,.... */
+.fun{
+    background: url(./img/ia_200000022.jpg) center no-repeat;
+    background-size: cover;
+    
+}
+.fun .left h1{
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 80px;
+}
+.fun .left p{
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.one{
+    padding: 15px 340px 15px 15px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0px 0px 1px;
+}
+.two{
+    padding: 15px 340px 15px 15px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0px 0px 1px;
+}
+.three{
+    padding: 15px 340px 15px 15px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0px 0px 1px;
+}
+.four{
+    padding: 15px 356px 104px 15px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0px 0px 1px;
+}
+.five{
+    background: #c69453;
+    padding: 15px 35px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 115px;
+}
+input:focus{
+    border: 2px solid #000;
+}
+/* ....fotter section......  */
+footer{
+    padding: 30px 0;
+    background: #6d6d6d;
+}
+footer .left{
+    float: left;
+    width: 50%;
+    color: #cad3d3;
+}
+
+footer .right{
+    float: right;
+    width: 50%;
+    color: #cad3d3;
+}
+footer .right i{
+    margin: 0 15px;
+}
